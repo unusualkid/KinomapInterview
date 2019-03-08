@@ -4,7 +4,7 @@ platform :ios, '12.0'
 target 'KinomapInterview' do
   use_frameworks!
 
-  pod 'Alamofire', '~> 5.0.0-beta.3'
- 
+  pod 'Alamofire'
+  pod 'AlamofireImage' 
 
 end
