@@ -12,6 +12,8 @@
 		3C938A2F22327FDA0023F120 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C938A2D22327FDA0023F120 /* Main.storyboard */; };
 		3C938A3122327FDB0023F120 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C938A3022327FDB0023F120 /* Assets.xcassets */; };
 		3C938A3422327FDB0023F120 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C938A3222327FDB0023F120 /* LaunchScreen.storyboard */; };
+		3C938A3C223281C40023F120 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C938A3B223281C40023F120 /* TableViewCell.swift */; };
+		D60D508A823A0C64038B22E8 /* Pods_KinomapInterview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CBBEEF97821C37EDA437356 /* Pods_KinomapInterview.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		3C938A3022327FDB0023F120 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C938A3322327FDB0023F120 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C938A3522327FDB0023F120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C938A3B223281C40023F120 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		456291DC0E2A5C705D4D121D /* Pods-KinomapInterview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinomapInterview.release.xcconfig"; path = "Pods/Target Support Files/Pods-KinomapInterview/Pods-KinomapInterview.release.xcconfig"; sourceTree = "<group>"; };
+		6CBBEEF97821C37EDA437356 /* Pods_KinomapInterview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KinomapInterview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE7D3F47C69C99BACCCE2D94 /* Pods-KinomapInterview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinomapInterview.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KinomapInterview/Pods-KinomapInterview.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D60D508A823A0C64038B22E8 /* Pods_KinomapInterview.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D17FE5A92433A8DE6C0C1B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE7D3F47C69C99BACCCE2D94 /* Pods-KinomapInterview.debug.xcconfig */,
+				456291DC0E2A5C705D4D121D /* Pods-KinomapInterview.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3C938A1D22327FDA0023F120 = {
 			isa = PBXGroup;
 			children = (
 				3C938A2822327FDA0023F120 /* KinomapInterview */,
 				3C938A2722327FDA0023F120 /* Products */,
+				2D17FE5A92433A8DE6C0C1B4 /* Pods */,
+				C4D24E2393B25C1D5637BAFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +74,21 @@
 			children = (
 				3C938A2922327FDA0023F120 /* AppDelegate.swift */,
 				3C938A2B22327FDA0023F120 /* ViewController.swift */,
+				3C938A3B223281C40023F120 /* TableViewCell.swift */,
 				3C938A2D22327FDA0023F120 /* Main.storyboard */,
 				3C938A3022327FDB0023F120 /* Assets.xcassets */,
 				3C938A3222327FDB0023F120 /* LaunchScreen.storyboard */,
 				3C938A3522327FDB0023F120 /* Info.plist */,
 			);
 			path = KinomapInterview;
+			sourceTree = "<group>";
+		};
+		C4D24E2393B25C1D5637BAFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CBBEEF97821C37EDA437356 /* Pods_KinomapInterview.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,6 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C938A3822327FDB0023F120 /* Build configuration list for PBXNativeTarget "KinomapInterview" */;
 			buildPhases = (
+				7723E8AF5D1969BF265CE2A3 /* [CP] Check Pods Manifest.lock */,
 				3C938A2222327FDA0023F120 /* Sources */,
 				3C938A2322327FDA0023F120 /* Frameworks */,
 				3C938A2422327FDA0023F120 /* Resources */,
@@ -130,11 +158,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7723E8AF5D1969BF265CE2A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KinomapInterview-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3C938A2222327FDA0023F120 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C938A3C223281C40023F120 /* TableViewCell.swift in Sources */,
 				3C938A2C22327FDA0023F120 /* ViewController.swift in Sources */,
 				3C938A2A22327FDA0023F120 /* AppDelegate.swift in Sources */,
 			);
@@ -280,6 +330,7 @@
 		};
 		3C938A3922327FDB0023F120 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE7D3F47C69C99BACCCE2D94 /* Pods-KinomapInterview.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +349,7 @@
 		};
 		3C938A3A22327FDB0023F120 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 456291DC0E2A5C705D4D121D /* Pods-KinomapInterview.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
